@@ -744,3 +744,101 @@ textarea {
         opacity: 1;
     }
 }
+
+
+
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Box */
+.popup-box {
+  background: white;
+  border-radius: 10px;
+  width: 70%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Content */
+.popup-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.camera-icon {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.enter-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.right iframe {
+  border-radius: 8px;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 35px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #900;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.95);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .popup-content {
+    flex-direction: column;
+  }
+  .right iframe {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+

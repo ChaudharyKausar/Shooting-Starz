@@ -1,3 +1,21 @@
+
+
+  // popup Video
+  window.addEventListener('load', () => {
+  const popup = document.getElementById('popup');
+  const closeBtn = document.getElementById('closePopup');
+  const enterBtn = document.getElementById('enterSite');
+
+  // Show popup on page load
+  popup.style.display = 'flex';
+
+  // Close popup on button clicks
+  closeBtn.addEventListener('click', () => popup.style.display = 'none');
+  enterBtn.addEventListener('click', () => popup.style.display = 'none');
+});
+
+
+
 // Select elements we'll need to manipulate
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -80,4 +98,6 @@ const heroBanner = document.getElementById("heroBanner");
       heroBanner.style.backgroundImage = `url('${defaultBg}')`;
     });
   });
+
+
 
