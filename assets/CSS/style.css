@@ -846,3 +846,31 @@ h2 {
 }
 
 
+
+/* our show reel section */
+.studio-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;     /* Change based on your layout */
+  margin: auto;
+}
+
+.studio-frame {
+  width: 100%;
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+
+.backdrop-video {
+  position: absolute;
+  top: 18%;             /* Adjust to fit your backdrop vertically */
+  left: 12%;            /* Adjust to move inside horizontally */
+  width: 76%;           /* Width of the backdrop area */
+  height: 64%;          /* Height of the backdrop area */
+  object-fit: cover;    /* Video fills the backdrop area properly */
+  z-index: 1;
+  border-radius: 4px;   /* Optional */
+}
+
+
